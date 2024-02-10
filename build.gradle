@@ -7,10 +7,12 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.javalin.io/' }
 }
 
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation "io.javalin:javalin:6.0.0"
 }
 
 test {
