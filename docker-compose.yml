@@ -1,4 +1,4 @@
-version: '3.8'
+version: '6.1'
 
 services:
   mongodb:
@@ -8,3 +8,4 @@ services:
       - "27017:27017"
     volumes:
       - ./data:/data/db
+    command: mongod --repair
